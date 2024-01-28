@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(assets/books-1617327_1280.jpg) no-repeat center center fixed;
+    background-size: cover;
+    overflow-x: hidden;
+    opacity: .8;
+}
+
+header {
+    background-color: #000;
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
+}
+
