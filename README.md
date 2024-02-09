@@ -20,20 +20,28 @@ The application is only made up of a singluar page which includes:
 
 ## Target Audience
 
-The My Book List app is targeted to all individuals who love reading books and want to keep track of book they want to read, completed and are currently reading. 
+The My Book List app targets all individuals who love reading books and want to keep track of books they want to read, complete and are currently reading. 
 
 ## Business Goals
 
 The business goals of the application are:
 
-1. Provide users with a simple application which doesn't require a lot of buttons or moving from one page to another.
+1. Provide users with a simple application that doesn't require many buttons or moving from one page to another.
 2. Make the application accessible for all devices.
 3. Allows users to add, edit and delete books in their list.
-4. Create a community for indiduals who love reading.
+4. Create a community for individuals who love reading.
 
 ## User Goals
 
 The user goals of the application are: 
 
-1. As a first time visitor, I want to easily ass, edit and delete books I have added to my list.
-2. As a first time vistor, I want to have the option to tag 
+1. As a first-time visitor, I want to easily ass, edit and delete books I have added to my list.
+2. As a first-time visitor, I want to have the option to mark my books as either completed, reading or want to read, and then update it.
+3. As a first-time visitor, I want the application to be easy to understand and use.
+4. As a first-time visitor, I want the application to be available on all devices.
+
+# UX
+
+## Strategy 
+
+When thinking of the Strategy of the app I considered who are the target audience and what features the users would be looking for in a book list app. 
