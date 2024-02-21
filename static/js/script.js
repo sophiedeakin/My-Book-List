@@ -31,8 +31,3 @@ function AddRow() {
     n++;
     x++;
 }
-
-deleteButton.addEventListener('click', function {
-    var remove = document.querySelector("#deletebtn");
-    remove.remove()
-})

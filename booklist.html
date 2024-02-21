@@ -42,13 +42,12 @@
                 <td class="border border-black text-center">{{ var3 }}</td>
                 <td class="border border-black text-center">{{ var4 }}</td>
                 <td class="border border-black text-center">
-                    <input type="submit" class="btn btn-primary" value="Edit" id="editbtn"></input>
+                    <input type="submit" class="btn btn-primary" value="Edit" id="editbtn" onclick="openForm()"></input>
                     <input type="submit" class="btn btn-danger" value="Delete" id="deletebtn"></input>
                 </td>
             </tr>
         </tbody>
       </table>
-      
     </div>
 </body>
 <script type="text/javascript" href="{{ url_for('static', filename='js/script.js') }}"">
