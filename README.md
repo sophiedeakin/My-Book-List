@@ -106,3 +106,18 @@ In the future I have planned to release the following features:
    - This will allows users to connect with one another and talk about book they are reading, completed and want to read. Rules will be pinned at the top of the forum and will require users to read and react in order for the business to know users understand rules set in place to keep everyone in the community safe.
 
 ## Structure
+
+For the structure plan for My Book List, I will be outlining the interaction design and information architecture of the website's pages and features to ensure users have uninterrupted experience. 
+
+1. Home Page
+   - Table: Visually displays the users books, will also include the "Edit" and "Delete" buttons.
+   - Form: Allow users to fill out the form with their book information to be displayed in the table.
+
+2. Edit Page
+   - Form: Prefilled with book information when users click on the "Edit" button, users can press save and with be redirected back to the Home page.
+
+3. Footer
+   - Copyright information
+
+4. Responsive Design
+   - Ensure the website layout adapts consistently to different screen sizes and devices. 
