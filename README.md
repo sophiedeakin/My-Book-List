@@ -72,52 +72,80 @@ To accomplish the business and user goals the features that will be added in the
      - "Add Book" Button - When users click on this button it will submit their book data and will be displayed visually in the table. Additionally, when users submit book data the information will be saved to a database which will save their data and retrieve it when returning to the website.
 
 4. Book Table
-   - When users submit their book information it will be shown in a table nder the correct table heading and allow multiple row to be added. I will also be adding an extra column called "Actions", this will have the "Edit" and "Delete" buttons.
+   - When users submit their book information it will be shown in a table under the correct table heading and allow multiple rows to be added. I will also be adding an extra column called "Actions", this will have the "Edit" and "Delete" buttons.
 
 5. Edit Button
-   - This interactive feature will allow users to edit their current books by opening up the form and display the book information, users will then make any changes they want and click on the "Save" button, this will automatically redirect them back to the Home page and show the updates they've made.
+   - This interactive feature will allow users to edit their current books by opening up the form and displaying the book information, users will then make any changes they want and click on the "Save" button, this will automatically redirect them back to the Home page and show the updates they've made.
 
 6. Delete Button
    - This interactive feature will allow users to delete any books in the table.
 
 ### Future Planned Releases 
 
-In the future I have planned to release the following features:
+In the future, I have planned to release the following features:
 
 1. Sign Up / Login Page
-  - This feature will allow users to create an account and login on different devices, it will also allow any information to stay on their account unless the user decides to delete it.
+   - This feature will allow users to create an account and log in on different devices, it will also allow any information to stay on their account unless the user decides to delete it.
 
 2. Account Customisation
-   - Allow users to customise their account by choosing profile picture, cover photo, about me section, interest, favourite books to read, and more.
+   - Allow users to customise their account by choosing a profile picture, cover photo, about me section, interest, favourite books to read, and more.
 
 3. Table Filter
-   - Allow users to change the order of their shown in the table, such as alphabetcial order of Authors or Book Titles.
+   - Allow users to change the order of their shown in the table, such as alphabetical order of Authors or Book Titles.
 
 4. Date Started and Finished
-   - This feature will be added to the form to allow users to input what day they started reading their book and when they finished it. This feature will be suitable to users who like to keep track on how long it takes them to read a book.
+   - This feature will be added to the form to allow users to input what day they started reading their book and when they finished it. This feature will be suitable for users who like to keep track of how long it takes them to read a book.
 
 5. Stars
    - This feature will be added to the form to allow users to rate their books out of 5.
 
 6. Feedback Form
-   - This feature will allows users to provide the business with any necessary feedback regarding bugs and issues, improving the website design and functionality.
+   - This feature will allow users to provide the business with any necessary feedback regarding bugs and issues, improving the website design and functionality.
 
 7. Discussion Forums
-   - This will allows users to connect with one another and talk about book they are reading, completed and want to read. Rules will be pinned at the top of the forum and will require users to read and react in order for the business to know users understand rules set in place to keep everyone in the community safe.
+   - This will allow users to connect and talk about books they are reading, completed and want to read. Rules will be pinned at the top of the forum and will require users to read and react for the business to know users understand the rules set in place to keep everyone in the community safe.
 
 ## Structure
 
-For the structure plan for My Book List, I will be outlining the interaction design and information architecture of the website's pages and features to ensure users have uninterrupted experience. 
+For the structure plan for My Book List, I will outline the interaction design and information architecture of the website's pages and features to ensure users have an uninterrupted experience. 
 
 1. Home Page
-   - Table: Visually displays the users books, will also include the "Edit" and "Delete" buttons.
+   - Table: Visually displays the user's books, and will also include the "Edit" and "Delete" buttons.
    - Form: Allow users to fill out the form with their book information to be displayed in the table.
 
 2. Edit Page
-   - Form: Prefilled with book information when users click on the "Edit" button, users can press save and with be redirected back to the Home page.
+   - Form: Prefilled with book information when users click on the "Edit" button, users can press save and will be redirected back to the Home page.
 
 3. Footer
    - Copyright information
 
 4. Responsive Design
    - Ensure the website layout adapts consistently to different screen sizes and devices. 
+
+## Skeleton
+
+### Wireframes 
+
+![My Book List Wireframes for desktop, tablet and mobile](https://github.com/sophiedeakin/My-Book-List/blob/main/readme_assets/wireframes.png)
+
+The wireframes shown above are the original plans and ideas of how I want My Book List's layout to look. During the building process of the website, I decided to make a few changes to the features and layout. 
+
+The first change I made was the form on the home page. I decided to change the input field for Status, my original idea was to have a dropdown menu which allowed users to select an option but I realised this didn't give users the flexibility to have custom status. Now the Status will have an input field where users can write in the status and any other information like chapter or page number. The next change I made was the layout of the home page, I decided to swap the position of the form and table because the table will be first seen when the page loads. Finally, the last change made was I added a new page called "Edit Page", when the user clicks on the edit button in the table the page will load. 
+
+### Prototypes 
+
+For My Book List, I wanted to create prototypes to get a rough idea of how I want the overall website to look with all the features together and how it looks when viewing different screen sizes. Below are the desktop, tablet and mobile prototypes I have made.
+
+#### Desktop Prototype
+
+![My Book List Desktop Prototype](https://github.com/sophiedeakin/My-Book-List/blob/main/readme_assets/desktop_prototype_home.png)
+
+#### Tablet Prototype
+
+![My Book List Tablet Prototype](https://github.com/sophiedeakin/My-Book-List/blob/main/readme_assets/tablet_prototype_home.png)
+
+#### Mobile Prototype
+
+![My Book List Mobile Prototype](https://github.com/sophiedeakin/My-Book-List/blob/main/readme_assets/mobile_prototype_home.png)
+
+## Surface 
