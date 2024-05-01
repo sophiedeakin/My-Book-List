@@ -100,10 +100,10 @@ In the future, I have planned to release the following features:
    - This feature will be added to the form to allow users to rate their books out of 5.
 
 6. Feedback Form
-   - This feature will allow users to provide the business with any necessary feedback regarding bugs and issues, improving the website design and functionality.
+   - This feature will allow users to provide the business with necessary feedback regarding bugs and issues, improving the website design and functionality.
 
 7. Discussion Forums
-   - This will allow users to connect and talk about books they are reading, completed and want to read. Rules will be pinned at the top of the forum and will require users to read and react for the business to know users understand the rules set in place to keep everyone in the community safe.
+   - This will allow users to connect and talk about books they are reading, completed and want to read. Rules will be pinned at the top of the forum and require users to read and react for the business to know users understand the rules set in place to keep everyone in the community safe.
 
 ## Structure
 
@@ -149,3 +149,67 @@ For My Book List, I wanted to create prototypes to get a rough idea of how I wan
 ![My Book List Mobile Prototype](https://github.com/sophiedeakin/My-Book-List/blob/main/readme_assets/mobile_prototype_home.png)
 
 ## Surface 
+
+### Colours 
+
+For the first release of My Book List, I wanted to pick a colour palette that fits the brand, allows me to influence user behaviour and at the same time keeps the colour selection limited to less than 5 colours. The colours used throughout the website are:
+
+- `#212529` Bootstrap: $dark: $gray-900;
+- `#6c757d` Bootstrap: $secondary: $gray-600;
+- `#ffffff` White
+- `#0d6efd` Bootstrap: $primary: $Blue;
+- `#f8f9fa` Bootstrap: $light: gray-100;
+- `#dc3545` Bootstrap: $danger: $Red;
+- `#000000` Black
+
+### Imagery 
+
+For the first release of My Book List, I wanted to choose the right images because most of the initial information users consume on websites is visual and first impressions are important, imagery should be expressive and capture the spirit of the business. 
+
+#### Background Image
+
+![My Book List Background Image](https://github.com/sophiedeakin/My-Book-List/blob/main/static/assets/books-bg.jpg)
+
+The image above was chosen for the background image because it matches the overall concept of the website. To keep the website consistent both the home and edit pages will have the image cover the whole page, since the image is bright I will be turning the opacity down to 80%. 
+
+#### Logo
+
+![My Book List Logo](https://github.com/sophiedeakin/My-Book-List/blob/main/static/assets/mybooklistlogo.png)
+
+The image above was chosen to be used for the logo of the website, the picture was created using Canva and a background removal tool. I wanted a logo that truly represents what the website is all about, memorable to users and a simple design. 
+
+### Header and Footer 
+
+To keep the website consistent the header and footer will have the same background colour of `#212529` and will have opacity also turned down to 80%, allowing users to see the background image through the header and footer. 
+
+### Forms 
+
+![Form on Home and Edit Page](https://github.com/sophiedeakin/My-Book-List/blob/main/readme_assets/form.png)
+
+#### Colours 
+
+The colours used in the form are:
+
+- `#6c757d` Bootstrap: $secondary: $gray-600; - Background colour
+- `#0d6efd` Bootstrap: $primary: $Blue; - "Add Book" & "Save" (Edit Page) Button
+- `#ffffff` White - Input Fields
+
+#### Interactive 
+
+The forms will create a two-way communication method between users and the website by allowing them to write relevant information in each input field about their books and use the "Add Book" button to visibly display it in the table. For the edit page users can do the same thing, they can make changes to their books like status or comments and press the "Save" button which will override the original information.
+
+### Table 
+
+![Table on Home Page](https://github.com/sophiedeakin/My-Book-List/blob/main/readme_assets/table.png)
+
+#### Colours
+
+The colours used in the table are: 
+
+- `#f8f9fa` Bootstrap: $light: gray-100; - Background colour
+- `#0d6efd` Bootstrap: $primary: $Blue; - Edit Button
+- `#dc3545` Bootstrap: $danger: $Red; - Delete Button
+
+#### Interactive 
+
+Users can interact with the table by pressing the "Edit" button under the Actions heading this will direct users to the Edit Page with a form where users can manage their books and make any changes. Also under Actions, there is a "Delete" button that allows users to delete their books. 
