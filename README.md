@@ -358,21 +358,25 @@ When testing the "Edit" button in the table I noticed it didn't direct me to the
 
 ![Edit Button Bug](https://github.com/sophiedeakin/My-Book-List/blob/main/readme_assets/edit_button_bug.png)
 
-The first step I took to resolve this issue is I look back at the code to see if I have mispelled something or forgotten to add a piece of code. After instpecting the index.html file I noticed I forgot to add "{{url_for('edit', id=book.id)}}". Once I added this code in and tested the "Edit" button again I was directed to the correct page.
-See image below of the bug fixed.
+The first step I took to resolve this issue was I look back at the code to see if I had mispelled something or forgotten to add a piece of code. After inspecting the index.html file I noticed I forgot to add "{{url_for('edit', id=book.id)}}". Once I added this code in and tested the "Edit" button again I was directed to the correct page.
+See the image below of the bug fixed.
 
 ![Edit Button Bug Fixed](https://github.com/sophiedeakin/My-Book-List/blob/main/readme_assets/edit_button_bug_fixed.png)
 
 #### Edit Page Form Visual Bug
 
-When testing the form on the Edit page I noticed the form didn't look the same as the Home page. See image below.
+When testing the form on the Edit page I noticed the form didn't look the same as the Home page. See the image below.
 
 ![Edit Form Visual Bug](https://github.com/sophiedeakin/My-Book-List/blob/main/readme_assets/edit_page_visual_bug.png)
 
-Looking back at my code I noticed on both lines 11 and 17 I forgot to add the closing quotation marks. After adding them in and realoading the website the form has been fixed. See image below. 
+Looking back at my code I noticed on both lines 11 and 17 I forgot to add the closing quotation marks. After adding them in and reloading the website the form has been fixed. See the image below. 
 
 ![Edit Form Visual Bug Fixed](https://github.com/sophiedeakin/My-Book-List/blob/main/readme_assets/edit_page_visual_bug_fixed.png)
 
 #### Responsiveness Not Working On Mobile Devices
 
 When using the Google Dev Tools to test the responsiveness 
+
+---
+permalink: /index.html
+---
