@@ -287,10 +287,92 @@ As a book reader, I want the ability to track the progress of my books by being 
 
 Users can use the "Edit" button within the table (reference image above) this will direct them to the Edit page where they can use the form to update their book information, once they have made changes they can press the "Save" button this will redirect them back to the Home page and they will see the changes in the table. The developers will know when the user's story has been accomplished by users having a seamless experience. 
 
-### User Story 3
+#### User Story 3
 
 As a book reader, I want the website to have reliable performance and easy navigation where the website responds to interactions and I can find what I am looking for without getting lost or confused. 
 
 ![User Story 3 Home Page](https://github.com/sophiedeakin/My-Book-List/blob/main/readme_assets/user_stories3.png) ![User Story 3 Edit Page](https://github.com/sophiedeakin/My-Book-List/blob/main/readme_assets/user_stories3.1.png)
 
+My Book List website has 2 pages Home page and an Edit page (reference image above), users can easily navigate the website without feeling overwhelmed. The website will go through automation testing to make sure the website loads quickly, responds to user interactions and doesn't experience errors or downtime.
 
+#### User Story 4
+
+As a book reader, I want the website to be compatible with different web browsers and be responsive to various devices and screen sizes. 
+
+![User Story 4](https://github.com/sophiedeakin/My-Book-List/blob/main/readme_assets/user_stories4.png)
+
+My Book List will go through testing using automation testing tools which give accurate reports, are less prone to human errors and effectively test user experience. During the testing, I will use Google Developer tools to test if the website is responsive to different devices and screen sizes, to test if the website works on other browsers I will open it on popular browsers like Firefox, Opera and Microsoft Edge.
+
+### Lighthouse 
+
+Google Lighthouse is a free automation testing tool that assesses web pages' overall quality and user experience. It provides quality scores across five categories:
+
+- Performance
+- Accessibility
+- Best Practices
+- SEO
+- Qualification as a Progressive Web Application
+
+Below are the results from the lighthouse test, I tested website on desktop and mobile mode:
+
+![Lighthouse Desktop Results](https://github.com/sophiedeakin/My-Book-List/blob/main/readme_assets/lighthouse_desktop.png)
+
+![Lighthouse Mobile Results](https://github.com/sophiedeakin/My-Book-List/blob/main/readme_assets/lighthouse_mobile.png)
+
+### Google Developer Tools 
+
+Google Developer Tools is a set of web developer tools built directly into Google Chrome, this tool helps you edit pages and diagnose problems quickly which makes your website looker better and build them faster.
+
+Throughout the building process of the website I consistently used Google Developer Tools to identify bugs, it also allows me to test the responsiveness of the website by provding simulated devices like: 
+
+- Galaxy S9+
+- Galaxy Tab S4
+- iPhone SE
+- iPhone XR
+- iPhone 12 Pro
+- iPhone 14 Pro Max
+- Pixel 7
+- Samsung Galaxy S8+
+- Samsung Galaxy S20 Ultra
+- iPad Mini
+- iPad Air
+- iPad Pro
+- Surface Pro 7
+- Surface Duo
+- Galaxy Fold
+- Samsung Galaxy A51/71
+- Nest Hub
+- Nest Hub Max
+- iPhone 4
+- iPhone 5/SE
+- iPhone 6/7/8
+- iPhone 6/7/8 Plus
+- iPhone X
+- iPad
+
+### Known Bugs and Fixes
+
+#### Edit Button Bug
+
+When testing the "Edit" button in the table I noticed it didn't direct me to the Edit page instead it gave me an error "Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again." (Reference image below).
+
+![Edit Button Bug](https://github.com/sophiedeakin/My-Book-List/blob/main/readme_assets/edit_button_bug.png)
+
+The first step I took to resolve this issue is I look back at the code to see if I have mispelled something or forgotten to add a piece of code. After instpecting the index.html file I noticed I forgot to add "{{url_for('edit', id=book.id)}}". Once I added this code in and tested the "Edit" button again I was directed to the correct page.
+See image below of the bug fixed.
+
+![Edit Button Bug Fixed](https://github.com/sophiedeakin/My-Book-List/blob/main/readme_assets/edit_button_bug_fixed.png)
+
+#### Edit Page Form Visual Bug
+
+When testing the form on the Edit page I noticed the form didn't look the same as the Home page. See image below.
+
+![Edit Form Visual Bug](https://github.com/sophiedeakin/My-Book-List/blob/main/readme_assets/edit_page_visual_bug.png)
+
+Looking back at my code I noticed on both lines 11 and 17 I forgot to add the closing quotation marks. After adding them in and realoading the website the form has been fixed. See image below. 
+
+![Edit Form Visual Bug Fixed](https://github.com/sophiedeakin/My-Book-List/blob/main/readme_assets/edit_page_visual_bug_fixed.png)
+
+#### Responsiveness Not Working On Mobile Devices
+
+When using the Google Dev Tools to test the responsiveness 
