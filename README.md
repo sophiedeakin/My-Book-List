@@ -1,7 +1,3 @@
----
-permalink: /templates/index.html
----
-
 # My Book List 
 
 **Link to website and IAMRESPONSIVE IMAGE**
