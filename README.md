@@ -1,6 +1,3 @@
----
-permalink: /templates/index.html
----
 
 # My Book List 
 
