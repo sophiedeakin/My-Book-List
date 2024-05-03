@@ -1,3 +1,7 @@
+---
+permalink: /index.html
+---
+
 # My Book List 
 
 **Link to website and IAMRESPONSIVE IMAGE**
@@ -377,6 +381,3 @@ Looking back at my code I noticed on both lines 11 and 17 I forgot to add the cl
 
 When using the Google Dev Tools to test the responsiveness 
 
----
-permalink: /index.html
----
