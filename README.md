@@ -6,6 +6,8 @@
 
 Welcome to My Book List, your go-to website for tracking books you are reading, completed and want to read in the future. This simple website helps you stay organised and motivates you to read more books or achieve personal goals.
 
+---
+
 # UX
 
 ## Strategy
@@ -196,7 +198,7 @@ The colours used in the form are:
 
 #### Interactive 
 
-The forms will create a two-way communication method between users and the website by allowing them to write relevant information in each input field about their books and use the "Add Book" button to visibly display it in the table. For the edit page users can do the same thing, they can make changes to their books like status or comments and press the "Save" button which will override the original information.
+The forms will create a two-way communication method between users and the website by allowing them to write relevant information in each input field about their books and use the "Add Book" button to display it in the table visibly. For the edit page users can do the same thing, they can make changes to their books like status or comments and press the "Save" button which will override the original information.
 
 ### Table 
 
@@ -212,4 +214,83 @@ The colours used in the table are:
 
 #### Interactive 
 
-Users can interact with the table by pressing the "Edit" button under the Actions heading this will direct users to the Edit Page with a form where users can manage their books and make any changes. Also under Actions, there is a "Delete" button that allows users to delete their books. 
+Users can interact with the table by pressing the "Edit" button under the Actions heading this will direct users to the Edit Page with a form where users can manage their books and make any changes. Also under Actions, there's a "Delete" button that allows users to delete their books. 
+
+---
+
+## Technologies Used 
+
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+  * Used for the basic building block for the project and to structure the content.
+
+- [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
+  * Used for styling all the web content across the project.
+
+- [Python](https://developer.mozilla.org/en-US/docs/Glossary/Python)
+  * Used for back-end developing websites and software, task automation, data analysis, and data visualization.
+
+- [Flask](https://flask.palletsprojects.com/en/3.0.x/)
+  * Used for developing web applications using Python.
+
+- [Google Developer Tools](https://developer.chrome.com/docs/devtools/)
+  * Used for identifying any bugs and testing responsiveness.
+
+- [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview)
+  * Used for improving the quality of web pages.
+
+- [GitHub](https://github.com/)
+  * Used for storing code for the project after being pushed.
+
+- [Git](https://git-scm.com/)
+  * Used for version control by utilising the VS Code terminal to commit to Git and Push to GitHub
+
+- [Visual Studio Code](https://code.visualstudio.com/)
+  * Free Open Source software used to code the project.
+
+- [Figma](https://www.figma.com/)
+  * Used for creating the wireframes for the project.
+
+- [Canva](https://www.canva.com/)
+  * Used for designing and editing the project logo and creating the prototypes
+
+- [Grammaly](https://www.grammarly.com/)
+  * Used for checking grammar and spelling mistakes throughout the project.
+
+- [Background Remover](https://www.remove.bg/)
+  * Used for removing the background around the logo and arrow buttons making them transparent.
+ 
+---
+
+## Testing 
+
+### Automation Testing & Manual Testing 
+
+For My Book List, I will be using automation testing over manual testing because it's very accurate and reliable for repetitive tests and there is less prone to human errors, automation is efficient and effective as it covers a wider range of scenarios, such as large, complex, and repetitive ones. Additionally, automation testing has a faster test cycle time because it's effective when testing the user experience as the UX typically involves judging the feeling or perception a user might have about the overall user-friendliness.
+
+For this project, I will use Google Lighthouse, an open-source automated tool for improving the quality of web pages and has audits for performance, accessibility, progressive web apps, SEO, and more. I have chosen this automated tool because it's cost-effective and doesn't require me to sign up for a subscription service, I also have experience using this tool and am quite familiar with how it works. Google Lighthouse generates reports on how well the page did and you can use the failing tests as indicators of what you can do to improve your app, it also provides you with recommendations on how to improve it.
+
+### User Stories 
+
+#### User Story 1 
+
+As a book reader, I want the ability to organise my reading list to keep track of books I am reading, completed and want to read in the future.
+
+![User Story 1](https://github.com/sophiedeakin/My-Book-List/blob/main/readme_assets/user_stories1.png)
+
+Users can use the form to log their books, the status field within the form allows users to input a custom status like Reading, Completed or Want to Read. Once users have completed the form they can submit it and the information will be visually displayed in the table above (reference image above). The developers will know when the user story has been accomplished by not receiving bug reports and the business has gained new and returning customers. 
+
+#### User Story 2 
+
+As a book reader, I want the ability to track the progress of my books by being able to make updates and see them visually displayed on the website.
+
+![User Story 2](https://github.com/sophiedeakin/My-Book-List/blob/main/readme_assets/user_stories2.png)
+
+Users can use the "Edit" button within the table (reference image above) this will direct them to the Edit page where they can use the form to update their book information, once they have made changes they can press the "Save" button this will redirect them back to the Home page and they will see the changes in the table. The developers will know when the user's story has been accomplished by users having a seamless experience. 
+
+### User Story 3
+
+As a book reader, I want the website to have reliable performance and easy navigation where the website responds to interactions and I can find what I am looking for without getting lost or confused. 
+
+![User Story 3 Home Page](https://github.com/sophiedeakin/My-Book-List/blob/main/readme_assets/user_stories3.png) ![User Story 3 Edit Page](https://github.com/sophiedeakin/My-Book-List/blob/main/readme_assets/user_stories3.1.png)
+
+
