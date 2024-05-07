@@ -218,6 +218,10 @@ Users can interact with the table by pressing the "Edit" button under the Action
 
 ---
 
+## Data Strucuter
+**Talk about database, google draw**
+
+---
 ## Technologies Used 
 
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
@@ -375,5 +379,21 @@ Looking back at my code I noticed on both lines 11 and 17 I forgot to add the cl
 
 #### Responsiveness Not Working On Mobile Devices
 
-When using the Google Dev Tools to test the responsiveness 
+When using the Google Dev Tools to test the responsiveness of the website I noticed the header, footer and form on the Home page was sticking left when viewing on smaller screen like mobile phones. Reference image below of the bug.
 
+![Responsiveness Bug](https://github.com/sophiedeakin/My-Book-List/blob/main/readme_assets/responsiveness_bug.png)
+
+Looking at the website I noticed the table was casuing the issue to occur. For the project I mainly used Bootstrap for the styling and used their website to resolve the issue, I found the table was meant to be placed within a div and inside the div add 'class="overflow-auto"'. By doing this a scrollbar will be automatically added when the content exceeds its dimensions. Once I made those changes and checked the responsiveness the issue has been fixed. The image below shows the fix.
+
+**Include in credits:https://getbootstrap.com/docs/4.2/utilities/overflow/**
+
+![Responsiveness Bug Fixed](https://github.com/sophiedeakin/My-Book-List/blob/main/readme_assets/responsiveness_bug_fixed.png)
+
+---
+
+## Deployment
+
+**Need to fix deployment issue**
+---
+
+## Credit
