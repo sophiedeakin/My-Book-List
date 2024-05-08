@@ -3,7 +3,7 @@ from flask import Flask, render_template, request, redirect,  url_for
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///books.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///books.db', os.environ.get('DATABASE_URL')
 db = SQLAlchemy(app)
 
 class Book(db.Model):
