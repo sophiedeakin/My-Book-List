@@ -218,7 +218,7 @@ Users can interact with the table by pressing the "Edit" button under the Action
 
 ---
 
-## Data Strucuter
+## Data Structure
 **Talk about database, google draw**
 
 ---
@@ -327,7 +327,7 @@ Below are the results from the lighthouse test, I tested website on desktop and 
 
 Google Developer Tools is a set of web developer tools built directly into Google Chrome, this tool helps you edit pages and diagnose problems quickly which makes your website looker better and build them faster.
 
-Throughout the building process of the website I consistently used Google Developer Tools to identify bugs, it also allows me to test the responsiveness of the website by provding simulated devices like: 
+Throughout the building process of the website I consistently used Google Developer Tools to identify bugs, it also allowed me to test the responsiveness of the website by providing simulated devices like: 
 
 - Galaxy S9+
 - Galaxy Tab S4
@@ -379,11 +379,11 @@ Looking back at my code I noticed on both lines 11 and 17 I forgot to add the cl
 
 #### Responsiveness Not Working On Mobile Devices
 
-When using the Google Dev Tools to test the responsiveness of the website I noticed the header, footer and form on the Home page was sticking left when viewing on smaller screen like mobile phones. Reference image below of the bug.
+When using the Google Dev Tools to test the responsiveness of the website I noticed the header, footer and form on the Home page was sticking left when viewing on smaller screens like mobile phones. Reference the image below of the bug.
 
 ![Responsiveness Bug](https://github.com/sophiedeakin/My-Book-List/blob/main/readme_assets/responsiveness_bug.png)
 
-Looking at the website I noticed the table was casuing the issue to occur. For the project I mainly used Bootstrap for the styling and used their website to resolve the issue, I found the table was meant to be placed within a div and inside the div add 'class="overflow-auto"'. By doing this a scrollbar will be automatically added when the content exceeds its dimensions. Once I made those changes and checked the responsiveness the issue has been fixed. The image below shows the fix.
+Looking at the website I noticed the table was causing the issue to occur. For the project I mainly used Bootstrap for the styling and used their website to resolve the issue, I found the table was meant to be placed within a div and inside the div add 'class="overflow-auto"'. By doing this a scrollbar will be automatically added when the content exceeds its dimensions. Once I made those changes and checked the responsiveness the issue was fixed. The image below shows the fix.
 
 **Include in credits:https://getbootstrap.com/docs/4.2/utilities/overflow/**
 
@@ -393,7 +393,25 @@ Looking at the website I noticed the table was casuing the issue to occur. For t
 
 ## Deployment
 
-**Need to fix deployment issue**
+My Book List website was deployed using Heroku and followed the steps below:
+
+1. **Create a Heroku Account:** Sign up for a free Heroku account at [Heroku's website](https://dashboard.heroku.com/).
+2. **Install Heroku CLI:** Download and install the Heroku Command Line (CLI) for your operating system. More information on installation can be found on [Heroku Dev Center website](https://devcenter.heroku.com/).
+3. **Set Up Your Flask Application:**
+  - Ensure your Flask application is working locally.
+  - Ensure you have a 'requirements.txt' file listing all your Python dependencies.
+  - Create a 'Procfile' in the root directory of your project. This file tells Heroku how to run your application.
+
+4. **Initialise a Git Repository:** If your project is not already under version control with Git, initialise a repository in your project directory. *git init*
+5. **Login to Heroku:** Run the following command in your terminal or command prompt to log in to your Heroku account. *heroku login*
+6. **Create a New Heroku App:** Create a new Heroku app using the Heroku CLI. *heroku create your-app-name*
+   - Replace 'your-app-name' with a unique name for your Heroku app. Heroku will assign a random name if you leave out the parameter.
+
+7. **Add a Remote to Your Git Repository:** Add a remote to your Git repository that points to your Heroku app. *heroku git:remote -a your-app-name*
+8. **Deploy Your Application:** Deploy your application to Heroku by pushing your Git repository to the Heroku remote. *git add .* *git commit -m "Initial Commit* *git push heroku master*
+9. **OPen Your Application:** Once the deployment is complete, you can open your application in your default web browser using the following command. *heroku open*
+10. **Check Logs:** If there are any issues, you can check your application logs using the Heroku CLI. *heroku logs --tail*
+
 ---
 
 ## Credit
