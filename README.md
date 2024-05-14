@@ -1,6 +1,7 @@
 # My Book List 
 
-**Link to website and IAMRESPONSIVE IMAGE**
+[My Book List](https://my-book-list-cef41d00da4d.herokuapp.com/)
+![My Book List](https://github.com/sophiedeakin/My-Book-List/blob/main/readme_assets/amiresponsive.png)
 
 # Introduction 
 
@@ -218,8 +219,47 @@ Users can interact with the table by pressing the "Edit" button under the Action
 
 ---
 
-## Data Structure
-**Talk about database, google draw**
+## Data Schema
+
+The purpose of the data schema for My Book List is to structure and organise the data related to books, authors, comments, and status systematically. This organisation ensures efficient storage and retrieval of data. Additionally, it enhances the user experience by allowing users to interact with their books and make any necessary changes easily. The data represents book data and user data. The book data includes the book information like book title and author(s) and the user data, including user interactions such as the status of the book (reading, completed and want to read) and comments. 
+
+When deciding what database management system to use, I researched the differences, advantages and disadvantages of relational and non-relational databases. 
+
+The differences between relational and non-relation are:
+
+Relational Databases:
+   - **Data Structure** - Uses table-based structure with rows and columns.
+   - **Performance** - Provides strong data consistency and integrity but may have slower performance.
+   - **Scalability** - Has limited scalability, which makes it less suitable for large databases. 
+   - **Query Language** - It uses SQL for querying and manipulating data.
+   - **Schema** - Has a predefined schema which makes it better suited for structured data.
+   - **Development** - Requires more development effort when creating complex queries or changing database structure.
+
+Non-Relational Databases:
+   - **Data Structure** - Uses various data models, such as key-value, column-family, graph and document.
+   - **Performance** - Faster performance for specific use cases, like real-time processing and big data.
+   - **Scalability** - Has high scalability and can handle large-scale, distributed data efficiently.
+   - **Query Language** - It uses their query languages or APIs.
+   - **Schema** - It can accommodate various types of data and be flexible.
+   - **Development** - Easier to develop and require fewer resources.
+
+### Pros and Cons of Relational Databases
+
+The advantages of relational databases are data can easily be structured into different categories, the data is consistent and easy to navigate, relationships can be defined between data points easily, and Structured Query Learning (SQL) makes it easy to query and update data. On the other hand, relational databases have a few disadvantages such as indexes can take up a lot of space, as the data size grows scaling becomes difficult, and when the schema updates it becomes time-consuming and complicated.
+
+### Pros and Cons of Non-Relational Databases
+
+The advantages of non-relational databases are data is not confined to a structured group, performing functions allow greater flexibility, and the data and analysis can be more dynamic allowing more variant inputs. However, non-relational databases have some disadvantages as it can be difficult to query the data as there is no language, it can have different values for one key as the data is not consistent, and if the data is not managed correctly it can affect the integrity. 
+
+For My Book List, I have chosen a relational database as a method for storing data for the website, the type of relational database used was SQLite and I imported SQLALCHEMY into the Python Flask file. I used a relational database over a non-relational one because the website is currently small and only needs one table. Additionally, relational databases are simple to use and I can establish a link between two or more tables using a foreign key which refers to the primary key in another table. 
+
+Before creating the database I designed a data model schema diagram of what the database would look like, these diagrams are essential tools for database designers, developers and stakeholders as they provide a clear and concise visualisation of the database structure. See the image below of the data diagram using Google Draw. 
+
+![Schema Diagram](https://github.com/sophiedeakin/My-Book-List/blob/main/readme_assets/database_diagram.png)
+
+I have connected the database from the Python Flask file to SQLiteStudio, an open-source, cross-platform SQLite database manager. It provides a GUI for working with SQLite databases, allowing users to create, edit and manage database files efficiently. The image below is what the database visually looks like. 
+
+![SQLiteStudio Database](https://github.com/sophiedeakin/My-Book-List/blob/main/readme_assets/database_structure.png)
 
 ---
 ## Technologies Used 
@@ -249,13 +289,16 @@ Users can interact with the table by pressing the "Edit" button under the Action
   * Used for version control by utilising the VS Code terminal to commit to Git and Push to GitHub
 
 - [Visual Studio Code](https://code.visualstudio.com/)
-  * Free Open Source software used to code the project.
+  * Free open-source software used to code the project.
 
 - [Figma](https://www.figma.com/)
   * Used for creating the wireframes for the project.
 
 - [Canva](https://www.canva.com/)
   * Used for designing and editing the project logo and creating the prototypes
+
+- [Pixabay](https://pixabay.com/)
+  * Used for selecting the background image for the website.
 
 - [Grammaly](https://www.grammarly.com/)
   * Used for checking grammar and spelling mistakes throughout the project.
@@ -317,7 +360,7 @@ Google Lighthouse is a free automation testing tool that assesses web pages' ove
 - SEO
 - Qualification as a Progressive Web Application
 
-Below are the results from the lighthouse test, I tested website on desktop and mobile mode:
+Below are the results from the lighthouse test, I tested the website on desktop and mobile mode:
 
 ![Lighthouse Desktop Results](https://github.com/sophiedeakin/My-Book-List/blob/main/readme_assets/lighthouse_desktop.png)
 
@@ -385,8 +428,6 @@ When using the Google Dev Tools to test the responsiveness of the website I noti
 
 Looking at the website I noticed the table was causing the issue to occur. For the project I mainly used Bootstrap for the styling and used their website to resolve the issue, I found the table was meant to be placed within a div and inside the div add 'class="overflow-auto"'. By doing this a scrollbar will be automatically added when the content exceeds its dimensions. Once I made those changes and checked the responsiveness the issue was fixed. The image below shows the fix.
 
-**Include in credits:https://getbootstrap.com/docs/4.2/utilities/overflow/**
-
 ![Responsiveness Bug Fixed](https://github.com/sophiedeakin/My-Book-List/blob/main/readme_assets/responsiveness_bug_fixed.png)
 
 ---
@@ -396,7 +437,7 @@ Looking at the website I noticed the table was causing the issue to occur. For t
 My Book List website was deployed using Heroku and followed the steps below:
 
 1. **Create a Heroku Account:** Sign up for a free Heroku account at [Heroku's website](https://dashboard.heroku.com/).
-2. **Install Heroku CLI:** Download and install the Heroku Command Line (CLI) for your operating system. More information on installation can be found on [Heroku Dev Center website](https://devcenter.heroku.com/).
+2. **Install Heroku CLI:** Download and install the Heroku Command Line (CLI) for your operating system. More installation information can be found on [Heroku Dev Center website](https://devcenter.heroku.com/).
 3. **Set Up Your Flask Application:**
   - Ensure your Flask application is working locally.
   - Ensure you have a 'requirements.txt' file listing all your Python dependencies.
@@ -415,3 +456,46 @@ My Book List website was deployed using Heroku and followed the steps below:
 ---
 
 ## Credit
+
+I have used various types of resources whilst designing and building this project.
+
+**Guidance and Research**
+
+The websites/articles below were used for guidance and research:
+
+   - [Table](https://getbootstrap.com/docs/5.3/content/tables/)
+     * Used Bootstrap website to create and style the table.
+
+   - [Forms](https://getbootstrap.com/docs/5.3/forms/layout/)
+     * Used Bootstrap website to create and style the forms.
+
+   - [Buttons](https://getbootstrap.com/docs/5.3/components/buttons/)
+     * Used Bootstrap website to create and style the buttons.
+
+   - [Colours](https://getbootstrap.com/docs/5.0/utilities/colors/)
+     * Used Bootstrap website to decide what colours to use on the website.
+
+   - [Flask](https://flask.palletsprojects.com/en/3.0.x/)
+     * Used for guidance on how to install and set up Flask.
+
+   - [Responsiveness Bug](https://getbootstrap.com/docs/5.3/utilities/overflow/)
+     * Used Bootstrap website for guidance to fix the responsiveness bug.
+
+   - [Relational and Non-Relational Databases](https://aloa.co/blog/relational-vs-non-relational-database-pros-cons)
+     * Used this website to understand the differences, advantages and disadvantages between relational and non-relational databases.
+
+   - [Heroku Dev Center](https://devcenter.heroku.com/)
+     * Used this website for guidance on the installation of the Heroku CLI.
+
+**Media**
+
+The following websites were used for selecting and editing media for the website:
+
+   - [Canva](https://www.canva.com/)
+     * Used for designing and editing the logo for the website.
+
+   - [Background Remover](https://www.remove.bg/)
+     * Used for removing the background around the logo making it transparent.
+
+   - [Pixabay](https://pixabay.com/)
+     * Used for selecting the background image for the website. 
